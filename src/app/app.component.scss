@@ -1,0 +1,12 @@
+app-thermometer {
+  height: 300px;
+  margin-bottom: 16px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  input {
+    margin-bottom: 12px;
+  }
+}

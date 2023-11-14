@@ -1,0 +1,15 @@
+<main>
+  <div class="ring"></div>
+  @if (!isDisabled()) {
+  <div class="arrow" [style.transform]="'rotate(' + rotation() + 'deg)'"></div>
+  }
+  <div class="min"></div>
+  <div class="max"></div>
+</main>
+<div class="current">
+  @if(!isDisabled()) {
+  {{ currentTemp }}°C
+  } @else if(!isInputValid()) {
+  <span class="error">Invalid input</span>
+  } @else { &nbsp; }
+</div>

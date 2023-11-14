@@ -1,0 +1,13 @@
+<app-thermometer
+  [currentTemp]="currentTemperature"
+  [maxTemp]="maxTemperature"
+  [minTemp]="minTemperature"
+/>
+<div class="panel">
+  <label for="min">Min Temperature</label>
+  <input [(ngModel)]="minTemperature" id="min" type="number" />
+  <label for="current">Current Temperature</label>
+  <input [(ngModel)]="currentTemperature" id="current" type="number" />
+  <label for="max">Max Temperature</label>
+  <input [(ngModel)]="maxTemperature" id="max" type="number" />
+</div>
